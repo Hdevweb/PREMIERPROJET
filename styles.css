@@ -262,7 +262,6 @@ form {
     width: 30%;
     /*****taille faite par rapport a la class parents herbergements_populaires*****/
     background-color: #F2F2F2;
-    height: 626px;
     border-radius: 20px;
 }
 
@@ -313,7 +312,6 @@ form {
     display: flex;
     object-fit: cover;
     justify-content: space-between;
-    height: 445px;
     width: 100%;
 }
 
@@ -511,7 +509,6 @@ ul {
 
 .toutes_les_activites{
     width: 90%;
-    height: 190px;
     justify-content: center;
 }
 
