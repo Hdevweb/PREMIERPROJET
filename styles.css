@@ -131,7 +131,7 @@ form {
     font-weight: bold;
     font-size: 18px;
     padding: auto;
-
+    
 }
 
 #bouton_loupe {
@@ -246,6 +246,7 @@ form {
     justify-content: space-between;
     margin-top: 18px;
     margin-bottom: 6px;
+    box-shadow: 3px 3px 1px 1px #E5E4E4
 }
 
 .hebergement img {
@@ -319,6 +320,7 @@ form {
     margin: auto;
     margin-top: 8px;
     margin-bottom: 21px;
+    box-shadow: 3px 3px 1px 1px #E5E4E4
 }
 
 .hebergement_populaire img {
@@ -404,7 +406,6 @@ footer {
     display: flex;
     background-color: #F2F2F2;
     width: 100%;
-    height: 225px;
     margin-top: 45px;
 }
 
@@ -439,4 +440,324 @@ ul {
 
 /***************************************MOBILE*****************************************/
 
-@media screen and (max-width:768px) {}
+@media screen and (max-width:768px) {
+
+ body{
+    margin: 0px;
+ }   
+
+ /***************HEADER****************/
+
+ header{
+    flex-direction: column;
+    padding-top: 20px;
+ }
+
+header img{
+    margin: auto;
+}
+
+.header_bar{
+    width:100%;
+    margin-top:13px ;
+}
+
+.header_bar a{
+    width: 50%;
+    text-align: center;
+    border-bottom: 3px solid #F2F2F2;
+    padding-bottom: 25px;
+}
+
+.header_bar a:hover{
+    border-bottom: 3px solid #0065FC;
+    border-top: none;
+}
+
+/*******************RECHERCHE*****************/
+
+.partie_recherche h1{
+    width: 90%;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.partie_recherche p{
+    width: 90%;
+    text-align: center;
+}
+
+/********************FORMULAIRE******************/
+
+form{
+    width: 100%;
+    margin-left: 28px;
+}
+
+#ville_search{
+    width: 58%;
+}
+
+#search{
+    display: none;
+}
+
+#bouton_loupe{
+    color: #FFFFFF;
+    display: block;
+    background-color: #0065FC;
+}
+
+/**********************FILTRES******************/
+
+
+.filtres{
+    flex-direction: column;
+    width: 100%;
+}
+
+.titre_h3_filtres{
+    margin-left: 28px;
+}
+
+.tous_les_filtres{
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 28px;
+    
+}
+
+
+
+.filtres-icon{
+    width: 48%;
+    font-size: 11px;
+    display: flex;
+    margin-top: 10px;
+  
+    
+}
+
+.filtres-icon i{
+    padding: 0px;
+    margin-right: 10px;
+}
+
+#i_information{
+    width: 30px;
+    margin-bottom: 24px;
+}
+
+.i_plus_de_500{
+    margin-left: 28px;
+}
+
+/******************HEBERGEMENTS/POPULAIRES*******/
+
+.hebergements_populaires{
+    flex-direction: column-reverse;
+}
+
+/********************POPULAIRES******************/
+
+.les_plus_populaires_avec_graph{
+    margin-bottom: 29px;
+}
+
+.tous_les_hebergements_populaires{
+    margin-bottom: 54px;
+}
+
+.hebergement_populaire{
+    margin-top: -8px;
+    width: 90%;
+}
+
+
+/*******************HEBERGEMENTS****************/
+
+.hebergements_a_marseille{
+    width: 100%;
+    background-color: #FFFFFF;
+    border-radius: none;
+}
+
+.hebergements_a_marseille h2{
+    padding-left: 10px;
+    width: 100%;
+}
+
+.tous_les_hebergements{
+    flex-direction: column;
+    width: 90%;  
+}
+
+
+
+.hebergement{
+    width: 100%;
+}
+
+.hebergement img{
+    text-align: center;
+}
+
+
+#afficher_plus{
+    display: none;
+}
+
+/********************POPULAIRES*****************/
+
+.les_plus_populaires{
+    width: 100%;
+    flex-direction: column;
+    border-radius: 0%;
+}
+
+
+/********************ACTIVITES******************/
+
+#titre_activites_a_marseille{
+    width: 50%;
+    padding: 24px;
+    padding-bottom: 0px;
+}
+
+
+.toutes_les_activites{
+    width: 100%;
+    flex-direction: column;
+}
+
+.activites_a_marseille{
+    width: 100%;
+  
+}
+
+.activites_a_marseille img{
+    width: 87%;
+    height: 150px;
+    padding-left: 24px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+}
+
+.activites_a_marseille h3{
+    padding-left: 41px;
+}
+
+/*********************FOOTER********************/
+
+footer{
+    width: 100%;
+    flex-direction: column;
+    background-color: #F2F2F2;
+}
+
+.sections_footer{
+    width: 100%;
+    
+}
+
+.sections_footer h3{
+    padding-left: 28px;
+}
+
+.sections_footer ul{
+    padding-left: 28px;
+}
+}
+
+
+
+/***********************TABLETTE****************/
+
+
+@media screen and (min-width: 769px) and (max-width: 991px) {
+
+/************************HEADER******************/
+
+.header_bar{
+    width: 30%;
+    
+}
+
+/************************RECHERCHE****************/
+
+
+
+
+
+
+
+
+/************************FILTRES*******************/
+
+.tous_les_filtres{
+    display:flex ;
+    flex-wrap: wrap;
+}
+
+
+
+/*************************HEBERGEMENTS/POPULAIRES********/
+
+.hebergements_populaires{
+    display: flex;
+    flex-direction: column;
+}
+
+/**************************HEBERGEMENTS*******************/
+
+.hebergements_a_marseille{
+    width: 100%;
+}
+
+.hebergements_a_marseille h2{
+margin-left: 42px;
+}
+
+.tous_les_hebergements{
+    width: 90%;
+}
+
+.hebergements_a_marseille{
+    width: 100%;
+}
+
+/****************************POPULAIRES*******************/
+
+.les_plus_populaires{
+    width: 100%;
+    margin-top: 53px;
+}
+
+.les_plus_populaires_avec_graph{
+    width: 90%;
+}
+
+.tous_les_hebergements_populaires{
+    width: 95%;
+    display: flex;
+    margin: auto;
+
+}
+
+.hebergement_populaire{
+    width: 32%;
+
+    
+}
+
+.hebergement_populaire img{
+    width: 30%;
+    height: 139px;
+    padding: 5px;
+}
+
+
+
+/********ACTIVITES*******/
+}
