@@ -53,16 +53,17 @@ header {
 
 .header_bar {
     display: flex;
-    width: 18%;
+    width: 22%;
     justify-content: space-between;
     font-size: 16px;
-    padding-right: 10px;
+    
     
 }
 
 .header_bar a {
     color: black;
     padding-top: 41px;
+    min-width: 80px;
  
 }
 
@@ -74,6 +75,7 @@ header {
 header img {
     display: flex;
     width: 62px;
+    height: 20px;
     margin-top: 40px;
 }
 
@@ -119,7 +121,7 @@ form {
     font-weight: bold;
     padding-left: 5px;
     color: black;
-
+    min-width: 170px;
 }
 
 #search {
@@ -132,19 +134,20 @@ form {
     color: #FFFFFF;
     font-weight: bold;
     font-size: 18px;
-    
-    
+    min-width: 145px;
+    display: inline-block;  
 }
 
 #bouton_loupe {
     display: none;
 }
 
+
 /********************************************PARTIE 2 - FILTRES ******************************/
 .filtres {
     /******************div entière des filtres**************/
     margin-top: 29px;
-    display: grid;
+    display: flex;
     margin-bottom: 15px;
     width: 100%;
 }
@@ -153,11 +156,10 @@ form {
     font-size: 18px;
 }
 
-
-
 .tous_les_filtres{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     border-radius: 32px;
 }
@@ -180,7 +182,8 @@ form {
     border-radius: 25px;
     padding-right: 15px;
     font-size: 17px;
-    margin-left: 34px;
+    margin-left: 28px;
+    
 }
 
 .filtres-icon:hover {
@@ -246,14 +249,14 @@ form {
     border-radius: 20px 20px 20px 20px;
     background-color: #FFFFFF;
     height: 190px;
-    justify-content: space-between;
+   
     margin-top: 18px;
     margin-bottom: 6px;
     box-shadow: 3px 3px 1px 1px #E5E4E4
 }
 
 .hebergement img {
-    width: 96%;
+    width: 94%;
     object-fit: cover;
     height: 108px;
     border: none;
@@ -281,7 +284,7 @@ form {
 }
 
 .etoiles_hebergement i{
-    width: 4%;
+    width: 5%;
     font-size: 12px;
 }
 
@@ -333,48 +336,38 @@ form {
 }
 
 .hebergement_populaire img {
-    width: 34%;
-    height: 129px;
+    width: 37%;
+    height: 144px;
     border-radius: 20px 0px 0px 20px;
     padding: 5px;
     object-fit: cover;
+   
 }
 
-.bloc_texte {
-    width: 52%;
-    padding-left: 9px;
-    padding-top: 5px;
+.bloc_texte,.bloc_texte_3 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-left: 11px;
+    
 }
 
-
-.hebergement_populaire h3 {
-    margin-top: 5px;
-    margin-bottom: -8px;
-    font-size: 16px;
+.bloc_texte p{
+   margin-top:-10px ;
+   margin-bottom: 37px;
 }
 
-
-
-
-
-.b1 p,.b3 p{
-    padding-bottom: 15px;
-}
 
 
 .etoiles_populaires{
-    bottom: 0;
-    padding-top: 10px;
-
+    margin-top: 10px;
 }
 
 
 .etoiles_populaires i{
-    width: 5%;
-    font-size: 12px;
+    width: 7%;
+    font-size: 82%;
     
-
-
 }
 /***************************************PARTIE 6 - ACTIVITES **************************************/
 #titre_activites_a_marseille {
@@ -392,6 +385,7 @@ form {
     width: 23%;
     border: none;
     border-radius: 20px;
+    box-shadow: 3px 3px 1px 1px #E5E4E4
 }
 
 .activites_a_marseille img {
@@ -454,7 +448,7 @@ ul {
 .sections_footer {
     width: 31%;
 }
-
+/***********************************************************************************************/
 /*****************************************MEDIA QUERIES***********************************************/
 
 /***************************************MOBILE*****************************************/
@@ -523,10 +517,11 @@ form{
 }
 
 #bouton_loupe{
-    color: #FFFFFF;
-    display: block;
-    background-color: #0065FC;
+    display: flex;
+    display: inline;
 }
+}
+
 
 /**********************FILTRES******************/
 
@@ -534,6 +529,7 @@ form{
 .filtres{
     
     width: 100%;
+    flex-direction: column;
 }
 
 .titre_h3_filtres{
@@ -550,17 +546,18 @@ form{
     
     font-size: 11px;
     display: flex;
-    
-  
+    width: 36%;
+    margin-bottom: 25px;
 }
 
 .filtres-icon i{
-    padding: 0px;
-    margin-right: 10px;
+    margin-left: -2px;
+    margin-right:-13px;
+    
 }
 
 #i_information{
-    width: 30px;
+    
     margin-bottom: 24px;
 }
 
@@ -685,7 +682,7 @@ footer{
 }
 
 
-
+/*****************************************************************/
 /***********************TABLETTE****************/
 
 
@@ -714,6 +711,10 @@ footer{
     flex-wrap: wrap;
 }
 
+.filtres-icon{
+    padding-left: 10px;
+    min-width: 120px;
+}
 
 
 /*************************HEBERGEMENTS/POPULAIRES********/
@@ -774,4 +775,14 @@ margin-left: 42px;
 
 
 /********ACTIVITES*******/
+
+.activites_a_marseille{
+   position: relative; 
+}
+
+
+.activites_a_marseille img{
+    height: 200px;
+}
+
 }
